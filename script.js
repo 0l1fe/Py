@@ -1,6 +1,6 @@
 // script.js
 const WORDS_JSON = 'words.json';    // path to your JSON
-const THRESHOLD  = 100;             // only use the first THRESHOLD words
+const THRESHOLD  = 250;             // only use the first THRESHOLD words
 
 let wordsPool = [];
 let rusKey, meaningKey, exampleKey;
@@ -63,3 +63,4 @@ loadWords().catch(err => {
   document.getElementById('word').textContent = 'Error loading words';
   console.error(err);
 });
+
